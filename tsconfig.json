@@ -17,5 +17,6 @@
       "es2022",
       "dom"
     ]
-  }
+  },
+  "exclude": ["node_modules", "tmp"]
 }
