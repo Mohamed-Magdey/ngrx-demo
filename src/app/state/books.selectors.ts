@@ -9,5 +9,5 @@ export const selectCollectionState = createFeatureSelector<ReadonlyArray<string>
 export const selectBookCollection = createSelector(
   selectBooks,
   selectCollectionState,
-  (books, collection) => collection.map((id) => books.find((book) => book.id === id))
+  (books, collection) => collection.map((id) => books.find((book) => book.id === id)!)
 )
